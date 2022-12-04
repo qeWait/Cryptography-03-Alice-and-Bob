@@ -16,3 +16,5 @@ compute_bob_H_by_Alice = Hb.ScalarMult(a)
 
 compute_alice_H_by_Bob.PrintECPoint()
 compute_bob_H_by_Alice.PrintECPoint()
+
+print(compute_alice_H_by_Bob.ECPointToString() == compute_bob_H_by_Alice.ECPointToString())
